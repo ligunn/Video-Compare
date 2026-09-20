@@ -1,0 +1,27 @@
+{
+  "name": "video-compare",
+  "version": "0.1.0",
+  "description": "Side-by-side, wipe, flip and difference review of two or more versions of the same video, with automatic frame-rate conforming and per-file health diagnostics.",
+  "main": "src/main/main.js",
+  "private": true,
+  "license": "UNLICENSED",
+  "os": [
+    "win32"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test \"test/*.test.js\" \"test/*.test.mjs\"",
+    "fixtures": "node tools/make-fixtures.js",
+    "selftest": "electron . --selftest",
+    "analyze": "node tools/analyze.js",
+    "shortcuts": "electron . --install-shortcuts",
+    "shortcuts:remove": "electron . --remove-shortcuts",
+    "icon": "node tools/make-icon.js"
+  },
+  "devDependencies": {
+    "electron": "^44.4.3"
+  }
+}

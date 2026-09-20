@@ -1,0 +1,9 @@
+# Normalise line endings so a checkout behaves the same on every machine.
+* text=auto eol=lf
+# Windows scripts must be CRLF to run reliably in cmd.exe / PowerShell
+*.cmd text eol=crlf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+# never touch binary assets
+*.png binary
+*.ico binary

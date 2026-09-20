@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' blob: data:; media-src http://127.0.0.1:*">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Video Compare</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <header id="topbar">
+    <div class="brand">Video Compare</div>
+    <div id="slots" class="slots"></div>
+    <button id="btn-add" class="btn" title="Open one or more videos (Ctrl+O)">+ Add video</button>
+    <div class="spacer"></div>
+    <div id="modes" class="seg" role="tablist" aria-label="View mode">
+      <button data-mode="side" title="Side by side (1)">Side by side</button>
+      <button data-mode="wipe" title="Wipe slider (2)">Wipe</button>
+      <button data-mode="flip" title="A/B flip (3) — Tab cycles videos">Flip</button>
+      <button data-mode="diff" title="Difference heatmap (4)">Difference</button>
+    </div>
+    <label class="field">Scaling
+      <select id="sel-filter" title="How pictures are resampled when magnified">
+        <option value="nearest">Nearest (raw pixels)</option>
+        <option value="bilinear" selected>Bilinear</option>
+        <option value="bicubic">Bicubic</option>
+      </select>
+    </label>
+    <label class="field">Audio
+      <select id="sel-audio" title="Which video's sound you hear (M cycles)"></select>
+    </label>
+    <button id="btn-suspend" class="btn" title="Pause and release video decoders and GPU memory; Resume restores your place (S)">Suspend</button>
+    <button id="btn-health" class="btn" title="File health & diagnostics (H)">Health</button>
+    <div class="menu">
+      <button id="btn-export" class="btn" aria-haspopup="true">Export ▾</button>
+      <div id="menu-export" class="menu-pop" hidden>
+        <button id="exp-frames">Save current frames (PNG)…</button>
+        <button id="exp-conform">Save conformed copy…</button>
+      </div>
+    </div>
+  </header>
+
+  <section id="banner" hidden></section>
+
+  <main id="stage">
+    <canvas id="gl"></canvas>
+    <div id="overlay"></div>
+    <div id="diffbar" class="floatbar" hidden>
+      <label>Compare <select id="sel-diff"></select></label>
+      <label>Gain <input id="rng-gain" type="range" min="1" max="32" step="1" value="4"><output id="out-gain">4×</output></label>
+      <div class="seg small" id="diffmode"><button data-dm="heat">Heatmap</button><button data-dm="abs">Amplified</button></div>
+    </div>
+    <div id="empty">
+      <div class="empty-card">
+        <h1>Drop two or more videos here</h1>
+        <p>Compare an original with an upscale, or two upscales of the same footage.<br>
+        Different frame rates and timing problems are detected and conformed automatically.</p>
+        <button id="btn-open" class="btn primary">Choose videos…</button>
+      </div>
+    </div>
+    <div id="suspended" hidden>
+      <div class="empty-card">
+        <h1>Suspended</h1>
+        <p>Playback is paused and the video decoders and GPU memory are released.<br>Your place, zoom, view and audio choice are kept.</p>
+        <button id="btn-resume" class="btn primary">Resume</button>
+      </div>
+    </div>
+    <div id="busy" hidden><div class="spinner"></div><span id="busy-text">Working…</span></div>
+    <div id="toast" hidden></div>
+  </main>
+
+  <aside id="health" hidden></aside>
+
+  <footer id="transport">
+    <button id="t-start" class="icon" title="First frame (Home)">⏮</button>
+    <button id="t-back" class="icon" title="Previous frame (←)">‹</button>
+    <button id="t-play" class="icon play" title="Play / pause (Space)">▶</button>
+    <button id="t-fwd" class="icon" title="Next frame (→)">›</button>
+    <button id="t-end" class="icon" title="Last frame (End)">⏭</button>
+    <div id="timecode" class="mono">0:00.000</div>
+    <div id="scrub" class="scrub" role="slider" tabindex="-1"><div id="scrub-fill"></div><div id="scrub-marks"></div><div id="scrub-thumb"></div></div>
+    <div id="framecount" class="mono">0 / 0</div>
+    <label class="field">Speed
+      <select id="sel-speed"><option value="0.1">0.1×</option><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select>
+    </label>
+    <div class="zoomctl"><button id="z-fit" class="btn small" title="Fit (0)">Fit</button><button id="z-one" class="btn small" title="1:1 with the largest video's pixels (double-click)">1:1</button><span id="zoomtext" class="mono">100%</span></div>
+    <div id="syncstat" class="mono"></div>
+  </footer>
+</div>
+<script type="module" src="app.js"></script>
+</body>
+</html>

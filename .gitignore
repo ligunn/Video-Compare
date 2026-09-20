@@ -1,0 +1,14 @@
+# dependencies and generated files
+node_modules/
+test/fixtures/
+test/out/
+*.log
+npm-debug.log*
+
+# local editor state (machine-specific, nothing the app needs)
+.vscode/
+.idea/
+.env
+.env.*
+Thumbs.db
+Desktop.ini
