@@ -1,0 +1,114 @@
+VIDEO COMPARE - PROPRIETARY SOFTWARE LICENSE
+
+Copyright (c) 2026 ligunn. All rights reserved.
+
+In this license, "Owner" means ligunn, the holder of the GitHub account that
+publishes this repository. "Software" means everything in this repository and
+every copy or part of it: source code, scripts, tests, documentation, icons and
+other assets. "You" means anyone who obtains, accesses or uses the Software.
+
+1. OWNERSHIP
+
+The Software is the exclusive property of the Owner and is protected by
+copyright and other intellectual property laws. The Software is licensed, not
+sold. No title to, or ownership of, the Software passes to You.
+
+2. NO LICENSE GRANTED
+
+Except for the limited permission in Section 3, NO license or other right is
+granted to You, whether expressly, by implication, by estoppel or otherwise.
+Without the Owner's prior written permission You may not use, copy, modify,
+merge, adapt, translate, publish, display, distribute, sublicense, sell, rent,
+lease, lend, host, or create derivative works of the Software or any part of
+it. This is not open-source or "source-available" software. That the Software
+can be seen or downloaded is not permission to do any of these things.
+
+3. LIMITED EVALUATION PERMISSION
+
+If, and only for as long as, the Owner has personally given You access to the
+Software (for example by inviting You to the private repository or by sending
+You a copy), You may download it and run one copy on computers that You own or
+control, solely for Your own personal evaluation. This permission is
+non-exclusive, non-transferable, non-sublicensable, and revocable by the Owner
+at any time, with or without notice or reason. It ends automatically if Your
+access is withdrawn or if You breach this license.
+
+4. RESTRICTIONS
+
+Whether or not You have permission under Section 3, You may not:
+
+  (a) copy or share the Software with anyone, or make it available to the
+      public in any way, including public repositories, forks, gists,
+      archives, package registries, and file-sharing or hosting services;
+  (b) use the Software for any commercial, production or client-facing
+      purpose, or to provide a product or service to anyone else;
+  (c) modify the Software, or create or distribute derivative works of it;
+  (d) copy any part of the Software into another project;
+  (e) remove or alter any copyright, proprietary or license notice; or
+  (f) use the Software, or any part of it, to train, fine-tune or evaluate
+      machine-learning or artificial-intelligence models, or to build
+      datasets for them.
+
+5. THIRD-PARTY COMPONENTS
+
+The Software depends on separate programs and libraries that are not part of
+it and are not covered by this license, including Electron and its components
+(installed separately through npm) and FFmpeg (run as a separate external
+program). Each belongs to its own owners and is licensed under its own terms,
+which You must follow separately. Nothing in this license changes those terms.
+This license covers only the Owner's original work in the Software.
+
+6. FEEDBACK AND CONTRIBUTIONS
+
+If You send the Owner suggestions, bug reports, code or other material
+relating to the Software, You grant the Owner a perpetual, irrevocable,
+worldwide, royalty-free, transferable, sublicensable license to use that
+material for any purpose without obligation to You, and You confirm that You
+have the right to do so.
+
+7. TERMINATION
+
+This license ends immediately, without notice, if You breach any of its terms.
+When it ends, or when the Owner revokes Your permission, You must stop using
+the Software and permanently delete every copy in Your possession or control.
+Any provision that by its nature should survive termination does so.
+
+8. NO WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY
+KIND, EXPRESS OR IMPLIED, INCLUDING ANY WARRANTY OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE, TITLE OR NON-INFRINGEMENT. THE OWNER DOES NOT WARRANT
+THAT THE SOFTWARE WILL BE ERROR-FREE OR THAT IT WILL NOT DAMAGE YOUR FILES OR
+SYSTEM. YOU USE THE SOFTWARE ENTIRELY AT YOUR OWN RISK.
+
+9. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE OWNER WILL NOT BE LIABLE FOR ANY
+INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR PUNITIVE DAMAGES, OR FOR ANY
+LOSS OF DATA, PROFITS OR GOODWILL, ARISING OUT OF OR RELATING TO THE SOFTWARE
+OR THIS LICENSE, EVEN IF THE OWNER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGES. THE OWNER'S TOTAL LIABILITY FOR ALL CLAIMS WILL NOT EXCEED THE AMOUNT
+YOU PAID FOR THE SOFTWARE, WHICH IS ZERO UNLESS THE OWNER AGREED OTHERWISE IN
+WRITING.
+
+10. REMEDIES
+
+A breach of Sections 2, 3 or 4 would cause the Owner irreparable harm for which
+money damages would be an inadequate remedy. The Owner is therefore entitled to
+seek injunctive and other equitable relief, in addition to any other remedy
+available, to the extent permitted by law.
+
+11. GENERAL
+
+This license is the entire agreement between You and the Owner about the
+Software and may be changed only in a writing signed by the Owner. If any
+provision is found unenforceable, the rest remains in force. The Owner's
+failure to enforce a term is not a waiver of it. This license is governed by
+the laws of the jurisdiction in which the Owner resides, without regard to its
+conflict-of-law rules. All rights not expressly granted in this license are
+reserved by the Owner.
+
+12. CONTACT
+
+To ask for permission beyond Section 3, contact the Owner through the GitHub
+account "ligunn".

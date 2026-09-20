@@ -4,7 +4,7 @@
   "description": "Side-by-side, wipe, flip and difference review of two or more versions of the same video, with automatic frame-rate conforming and per-file health diagnostics.",
   "main": "src/main/main.js",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "SEE LICENSE IN LICENSE",
   "os": [
     "win32"
   ],

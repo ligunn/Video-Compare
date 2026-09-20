@@ -156,3 +156,9 @@ Test clips are generated patterns with the frame number burned in (no real media
 `src/main` is the Node side (ffprobe/ffmpeg, timestamp analysis, the conform planner, the exporter, a loopback media
 server); `src/renderer` is the UI (`view.js` layout maths, `gl.js` WebGL2 compositor, `engine.js` synchronisation engine);
 `src/preload` is the narrow bridge between them.
+
+## License
+
+Proprietary. Copyright (c) 2026 ligunn. All rights reserved. This is not open-source software: see [LICENSE](LICENSE).
+Access to this repository does not grant permission to copy, share, modify or redistribute it. Third-party components
+(Electron, FFmpeg, and the npm packages) are licensed separately by their owners.
