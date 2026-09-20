@@ -11,8 +11,8 @@ difference heatmap, with zoom and pan synchronised across all of them and frame-
 
 ## Quick start (about 5 minutes, mostly downloads)
 
-**You need:** Windows 11 (64-bit), an internet connection, about 1 GB of free disk space, and a GitHub login that can see
-this repository. H.264 videos play on any PC; **H.265 (HEVC) videos need a graphics card/driver with hardware HEVC
+**You need:** Windows 11 (64-bit), an internet connection, and about 1 GB of free disk space. No account or login is
+required. H.264 videos play on any PC; **H.265 (HEVC) videos need a graphics card/driver with hardware HEVC
 decoding** (see Troubleshooting).
 
 Do everything below in **Command Prompt** (Start menu, type `cmd`, press Enter). Command Prompt avoids PowerShell's
@@ -27,16 +27,17 @@ winget install --id Gyan.FFmpeg -e --accept-source-agreements --accept-package-a
 
 **2. Close Command Prompt and open a new one.** (So it can see the newly installed `node` and `npm`.)
 
-**3. Download this project.** On the repository page on GitHub click the green **Code** button, then **Download ZIP**.
-It saves as `Video-Compare-main.zip` in your Downloads folder. Unpack it into your user folder:
+**3. Download this project** (Windows 11 includes `curl` and `tar`) and unpack it into your user folder:
 
 ```
+curl -L -o "%USERPROFILE%\Downloads\Video-Compare-main.zip" https://github.com/ligunn/Video-Compare/archive/refs/heads/main.zip
 tar -xf "%USERPROFILE%\Downloads\Video-Compare-main.zip" -C "%USERPROFILE%"
 cd /d "%USERPROFILE%\Video-Compare-main"
 ```
 
-*(Prefer git? Install it with `winget install --id Git.Git -e`, then `git clone` the URL behind the green Code button
-and `cd` into the new folder. Everything after this step is identical.)*
+*(Prefer a browser? On the repository page click the green **Code** button, then **Download ZIP**, and run the last two
+commands. Prefer git? `winget install --id Git.Git -e`, then `git clone https://github.com/ligunn/Video-Compare.git` and
+`cd Video-Compare`. Everything after this step is identical.)*
 
 **4. Install the app's one dependency (Electron) and start it:**
 
@@ -160,5 +161,7 @@ server); `src/renderer` is the UI (`view.js` layout maths, `gl.js` WebGL2 compos
 ## License
 
 Proprietary. Copyright (c) 2026 ligunn. All rights reserved. This is not open-source software: see [LICENSE](LICENSE).
-Access to this repository does not grant permission to copy, share, modify or redistribute it. Third-party components
-(Electron, FFmpeg, and the npm packages) are licensed separately by their owners.
+You may download it and run it for your own **personal, non-commercial use**. You may not redistribute or publish it,
+modify it or build derivative works, use it commercially or inside an organization, or use it to train AI models
+without the owner's written permission. Third-party components (Electron, FFmpeg, and the npm packages) are licensed
+separately by their owners.

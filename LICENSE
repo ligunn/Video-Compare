@@ -20,26 +20,33 @@ granted to You, whether expressly, by implication, by estoppel or otherwise.
 Without the Owner's prior written permission You may not use, copy, modify,
 merge, adapt, translate, publish, display, distribute, sublicense, sell, rent,
 lease, lend, host, or create derivative works of the Software or any part of
-it. This is not open-source or "source-available" software. That the Software
-can be seen or downloaded is not permission to do any of these things.
+it. This is proprietary software, not open-source software. That the Software
+can be seen is not permission to do any of these things; what You may do with
+it is stated in Section 3.
 
-3. LIMITED EVALUATION PERMISSION
+3. PERSONAL, NON-COMMERCIAL USE
 
-If, and only for as long as, the Owner has personally given You access to the
-Software (for example by inviting You to the private repository or by sending
-You a copy), You may download it and run one copy on computers that You own or
-control, solely for Your own personal evaluation. This permission is
-non-exclusive, non-transferable, non-sublicensable, and revocable by the Owner
-at any time, with or without notice or reason. It ends automatically if Your
-access is withdrawn or if You breach this license.
+If You obtain an unmodified copy of the Software from the Owner, including by
+downloading it from the Owner's public repository on GitHub, You may keep that
+copy on computers that You own or control and run it for Your own personal,
+non-commercial use, including to evaluate it. Use by or on behalf of a company,
+employer, school or other organization is not personal use and needs the
+Owner's prior written permission. This permission is non-exclusive,
+non-transferable and non-sublicensable, and it does not extend to anything
+prohibited by Section 4. The Owner may revoke it at any time, for anyone or for
+everyone, with or without notice or reason (for example by changing this
+license or by removing public access to the repository). It ends automatically
+for You if You breach this license.
 
 4. RESTRICTIONS
 
 Whether or not You have permission under Section 3, You may not:
 
-  (a) copy or share the Software with anyone, or make it available to the
+  (a) give, send, copy or make the Software available to anyone else or to the
       public in any way, including public repositories, forks, gists,
-      archives, package registries, and file-sharing or hosting services;
+      archives, package registries, and file-sharing or hosting services
+      (other than keeping the copy that Section 3 lets You keep, and viewing
+      the Software on GitHub as GitHub's own terms permit);
   (b) use the Software for any commercial, production or client-facing
       purpose, or to provide a product or service to anyone else;
   (c) modify the Software, or create or distribute derivative works of it;
